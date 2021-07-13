@@ -1,0 +1,44 @@
+1 ?- father(X,Y).
+X = abid,
+Y = prince ;
+X = abid,
+Y = riya .
+
+2 ?- mother(A,B).
+A = riya,
+B = sopon ;
+A = riya,
+B = suma.
+
+3 ?- parents(abid,prince).
+true .
+
+4 ?- parents(riya,sopon).
+true .
+
+5 ?- parents(abid,riya).
+true.
+
+6 ?- parents(abid,suma).
+false.
+
+7 ?- listing(male).
+male(abid).
+male(prince).
+male(sopon).
+
+true.
+
+8 ?- listing(female).
+female(riya).
+female(suma).
+
+true.
+
+9 ?- listing(parents).
+parents(abid, prince).
+parents(abid, riya).
+parents(riya, sopon).
+parents(riya, suma).
+
+true.
