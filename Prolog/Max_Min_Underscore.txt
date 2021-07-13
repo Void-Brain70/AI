@@ -1,0 +1,20 @@
+1 ?- X is max(70,80).
+X = 80.
+
+2 ?- A is min(70,80).
+A = 70.
+
+3 ?- A is min(50,70,55).
+ERROR: is/2: Arithmetic: `min/3' is not a function
+
+
+4 ?- division(X,Y,Z).
+X = dhaka,
+Y = rajsahi,
+Z = khulna.
+
+5 ?- division(_,_,Z).
+Z = khulna.
+
+6 ?- division(_,X,_).
+X = rajsahi.
