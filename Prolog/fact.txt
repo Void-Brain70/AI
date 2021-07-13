@@ -1,0 +1,59 @@
+1 ?- likes X,Y.
+ERROR: Syntax error: Operator expected
+ERROR: likes
+ERROR: ** here **
+ERROR:  X,Y . 
+1 ?- likes(X,Y)
+|    likes(X,Y).
+ERROR: Syntax error: Operator expected
+ERROR: likes(X,Y)
+ERROR: ** here **
+ERROR: 
+likes(X,Y) . 
+1 ?- likes(X,Y).
+X = rafi,
+Y = chips.
+
+2 ?- likes(rafi,chips).
+true.
+
+3 ?- likes(rafi,cake).
+false.
+
+4 ?- loves(raju,rani).
+true.
+
+5 ?- loves(A,B).
+A = raju,
+B = rani.
+
+6 ?- male(rahim).
+true.
+
+7 ?- female(rahim).
+ERROR: toplevel: Undefined procedure: female/1 (DWIM could not correct goal)
+8 ?- male(anik).
+false.
+
+9 ?- likes(A,B).
+A = rafi,
+B = chips .
+
+10 ?- likes(A,B).
+A = rafi,
+B = chips 
+Unknown action: : (h for help)
+Action? ;
+A = rafu,
+B = chees ;
+A = anik,
+B = cake.
+
+11 ?- likes(anik.cake).
+ERROR: Undefined procedure: likes/1
+ERROR:     However, there are definitions for:
+ERROR:         likes/2
+false.
+
+12 ?- likes(anik,cake).
+true.
