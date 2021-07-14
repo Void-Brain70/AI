@@ -1,0 +1,43 @@
+?- go.
+Enter section A country name
+|: england.
+
+
+Section A country score is
+1
+Enter section B country name
+|: italy.
+
+
+Section B country score is
+1
+Draw the both section country
+true.
+
+?- go.
+Enter section A country name
+|: brazil.
+
+
+Section A country score is
+0
+Enter section B country name
+|: argentina.
+
+
+Section B country score is
+1
+Section B country Win the match
+true .
+
+?- go.
+Enter section A country name
+|: france.
+
+
+Section A country score is
+2
+Enter section B country name
+|: protugal.
+
+false.
