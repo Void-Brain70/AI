@@ -1,0 +1,10 @@
+1 ?- go.
+Enter your first number
+|: 70.
+
+Enter your second number
+|: 80.
+
+Sum is
+150
+true
