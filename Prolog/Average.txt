@@ -1,0 +1,13 @@
+1 ?- go.
+Enter 1st number
+|: 5.
+
+Enter 2nd number
+|: 5.
+
+Enter 3rd number
+|: 10.
+
+Average is
+6.666666666666667
+true.
