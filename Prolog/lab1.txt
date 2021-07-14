@@ -1,0 +1,26 @@
+?- smart(timal).
+false.
+
+?- smart(tomal).
+true.
+
+?- healthy(Who).
+Who = sozib.
+
+?- intelligent(X).
+X = robin .
+
+?- smart(X).
+X = tomal ;
+X = ruma.
+
+?- intelligent(X).
+X = robin ;
+X = rownok
+
+ሀ?- friend_of(robin,rownok).
+true.
+
+?- friend_of(X,Y).
+X = robin,
+Y = rownok.
