@@ -1,0 +1,11 @@
+ࠀ1 ?- go.
+Enter your first number
+|: 70.
+
+Enter your second number
+|: 90.
+
+Output is
+70
+90
+true.
