@@ -1,0 +1,60 @@
+1 ?- father(X,Y).
+X = abid,
+Y = prince ;
+X = abid,
+Y = riya ;
+X = prince,
+Y = ripa ;
+X = prince,
+Y = sakif ;
+false.
+
+2 ?- mother(X,Y).
+X = riya,
+Y = sopon ;
+X = riya,
+Y = suma.
+
+3 ?- brother(X,Y).
+X = prince,
+Y = riya ;
+X = sakif,
+Y = ripa ;
+X = sopon,
+Y = suma ;
+false.
+
+4 ?- sister(X,Y).
+X = riya,
+Y = prince ;
+X = ripa,
+Y = sakif ;
+X = suma,
+Y = sopon ;
+false.
+
+5 ?- sibling(X,Y).
+X = prince,
+Y = riya ;
+X = riya,
+Y = prince ;
+X = ripa,
+Y = sakif ;
+X = sakif,
+Y = ripa ;
+X = sopon,
+Y = suma ;
+X = suma,
+Y = sopon ;
+false.
+
+6 ?- grandfather(X,Y).
+X = abid,
+Y = ripa ;
+X = abid,
+Y = sakif ;
+X = abid,
+Y = sopon ;
+X = abid,
+Y = suma ;
+false.
