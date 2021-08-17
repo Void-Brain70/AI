@@ -1,0 +1,354 @@
+?- father(X,Y).
+X = anil,
+Y = sajal ;
+X = anil,
+Y = anik ;
+X = anil,
+Y = bisawnat ;
+X = anil,
+Y = liton ;
+X = sajal,
+Y = sharat ;
+X = bisawnat,
+Y = diya ;
+X = bisawnat,
+Y = abir ;
+X = liton,
+Y = seshtro ;
+X = sharat,
+Y = akash ;
+X = seshtro,
+Y = ovi ;
+X = seshtro,
+Y = priya ;
+X = ovi,
+Y = ontu ;
+X = akash,
+Y = ratri ;
+
+
+?- mother(X,Y).
+X = doli,
+Y = anik ;
+X = doli,
+Y = sajal ;
+X = doli,
+Y = bisawnat ;
+X = doli,
+Y = liton ;
+X = anima,
+Y = sharat ;
+X = momo,
+Y = diya ;
+X = momo,
+Y = abir ;
+X = bipasha,
+Y = seshtro ;
+X = borsha,
+Y = akash ;
+X = shok,
+Y = ovi ;
+X = shok,
+Y = priya ;
+X = puja,
+Y = ratri ;
+X = riya,
+Y = ontu.
+
+?- brother(X,Y).
+X = sajal,
+Y = anik ;
+X = sajal,
+Y = bisawnat ;
+X = sajal,
+Y = liton ;
+X = anik,
+Y = sajal ;
+X = anik,
+Y = bisawnat ;
+X = anik,
+Y = liton ;
+X = bisawnat,
+Y = sajal ;
+X = bisawnat,
+Y = anik ;
+X = bisawnat,
+Y = liton ;
+X = liton,
+Y = sajal ;
+X = liton,
+Y = anik ;
+X = liton,
+Y = bisawnat ;
+X = abir,
+Y = diya ;
+X = ovi,
+Y = priya ;
+X = anik,
+Y = sajal ;
+X = anik,
+Y = bisawnat ;
+X = anik,
+Y = liton ;
+X = sajal,
+Y = anik ;
+X = sajal,
+Y = bisawnat ;
+X = sajal,
+Y = liton ;
+X = bisawnat,
+Y = anik ;
+X = bisawnat,
+Y = sajal ;
+X = bisawnat,
+Y = liton ;
+X = liton,
+Y = anik ;
+X = liton,
+Y = sajal ;
+X = liton,
+Y = bisawnat ;
+X = abir,
+Y = diya ;
+X = ovi,
+Y = priya ;
+
+- sister(X,Y).
+X = diya,
+Y = abir ;
+X = diya,
+Y = abir ;
+
+
+?- sibling(X,Y).
+X = sajal,
+Y = anik ;
+X = sajal,
+Y = bisawnat ;
+X = sajal,
+Y = liton ;
+X = anik,
+Y = sajal ;
+X = anik,
+Y = bisawnat ;
+X = anik,
+Y = liton ;
+X = bisawnat,
+Y = sajal ;
+X = bisawnat,
+Y = anik ;
+X = bisawnat,
+Y = liton ;
+X = liton,
+Y = sajal ;
+X = liton,
+Y = anik ;
+X = liton,
+Y = bisawnat ;
+X = diya,
+Y = abir ;
+X = abir,
+Y = diya ;
+X = ovi,
+Y = priya ;
+X = priya,
+Y = ovi ;
+
+?- grandfather(X,Y).
+X = anil,
+Y = sharat ;
+X = anil,
+Y = diya ;
+X = anil,
+Y = abir ;
+X = anil,
+Y = seshtro ;
+X = sajal,
+Y = akash ;
+X = liton,
+Y = ovi ;
+X = liton,
+Y = priya ;
+X = sharat,
+Y = ratri ;
+X = seshtro,
+Y = ontu ;
+
+
+?- grandmother(X,Y).
+X = doli,
+Y = sharat ;
+X = doli,
+Y = diya ;
+X = doli,
+Y = abir ;
+X = doli,
+Y = seshtro ;
+X = anima,
+Y = akash ;
+X = bipasha,
+Y = ovi ;
+X = bipasha,
+Y = priya ;
+X = borsha,
+Y = ratri ;
+X = shok,
+Y = ontu ;
+
+
+?- first_cousin(X,Y).
+X = sharat,
+Y = diya ;
+X = sharat,
+Y = diya ;
+X = sharat,
+Y = abir ;
+X = sharat,
+Y = abir ;
+X = sharat,
+Y = seshtro ;
+X = sharat,
+Y = seshtro ;
+X = diya,
+Y = sharat ;
+X = diya,
+Y = sharat ;
+X = diya,
+Y = seshtro ;
+X = diya,
+Y = seshtro ;
+X = abir,
+Y = sharat ;
+X = abir,
+Y = sharat ;
+X = abir,
+Y = seshtro ;
+X = abir,
+Y = seshtro ;
+X = seshtro,
+Y = sharat ;
+X = seshtro,
+Y = sharat ;
+X = seshtro,
+Y = diya ;
+X = seshtro,
+Y = diya ;
+X = seshtro,
+Y = abir ;
+X = seshtro,
+Y = abir ;
+
+?- second_cousin(X,Y).
+X = akash,
+Y = ovi ;
+X = akash,
+Y = ovi ;
+X = akash,
+Y = priya ;
+X = akash,
+Y = priya ;
+X = ovi,
+Y = akash ;
+X = ovi,
+Y = akash ;
+X = priya,
+Y = akash ;
+X = priya,
+Y = akash ;
+
+?- third_cousin(X,Y).
+X = ratri,
+Y = ontu ;
+X = ratri,
+Y = ontu ;
+X = ontu,
+Y = ratri ;
+X = ontu,
+Y = ratri ;
+
+?- first_cousin_once_removed(X,Y).
+X = diya,
+Y = akash ;
+X = diya,
+Y = akash ;
+X = abir,
+Y = akash ;
+X = abir,
+Y = akash ;
+X = seshtro,
+Y = akash ;
+X = seshtro,
+Y = akash ;
+X = sharat,
+Y = ovi ;
+X = sharat,
+Y = ovi ;
+X = diya,
+Y = ovi ;
+X = diya,
+Y = ovi ;
+X = abir,
+Y = ovi ;
+X = abir,
+Y = ovi ;
+X = sharat,
+Y = priya ;
+X = sharat,
+Y = priya ;
+X = diya,
+Y = priya ;
+X = diya,
+Y = priya ;
+X = abir,
+Y = priya ;
+X = abir,
+Y = priya ;
+
+?- first_cousin_twice_removed(X,Y).
+X = diya,
+Y = ratri ;
+X = diya,
+Y = ratri ;
+X = abir,
+Y = ratri ;
+X = abir,
+Y = ratri ;
+X = seshtro,
+Y = ratri ;
+X = seshtro,
+Y = ratri ;
+X = sharat,
+Y = ontu ;
+X = sharat,
+Y = ontu ;
+X = diya,
+Y = ontu ;
+X = diya,
+Y = ontu ;
+X = abir,
+Y = ontu ;
+X = abir,
+Y = ontu;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
