@@ -64,13 +64,13 @@ parents(riya,ontu).
 father(X,Y):-parents(X,Y),male(X).
 mother(X,Y):-parents(X,Y),female(X).
 
+sibling(X,Y):-parents(Z,X),parents(Z,Y),X\=Y.
+
 brother(X,Y):-sibling(X,Y),male(X).
 sister(X,Y):-sibling(X,Y),female(X).
 
-sibling(X,Y):-parents(Z,X),parents(Z,Y),X\=Y.
-
-grandfather(X,Z):-father(X,Y),parents(Y,Z).
-grandmother(X,Z):-mother(X,Y),parents(Y,Z).
+grandfather(X,Z):-father(X,Y),parents(Y,Z),male(X).
+grandmother(X,Z):-mother(X,Y),parents(Y,Z),female(X).
 
 first_cousin(X,Y) :- parents(Z,X), parents(W,Y),X\=Y,Z\=W,sibling(Z,W).
 
