@@ -1,0 +1,2 @@
+friend(tom,jerry):-
+friend(tom,micky).
