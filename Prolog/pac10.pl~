@@ -1,0 +1,2 @@
+sumlength([],0).
+sumlength([H|T],N):-length(T,S), N is S+H.
