@@ -1,0 +1,7 @@
+bigger(100,1).
+bigger(10,1).
+bigger(1000,1).
+bigger(10,8).
+
+bigger(X,Y):- X>Y,bigger(X,Y).
+
